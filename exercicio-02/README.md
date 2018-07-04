@@ -42,6 +42,10 @@ Este exercício tem como objetivo elencar alguns pontos que poderia melhor o có
 	```java
 	List lista
 	```
+* Falta de validação caso a lista seja null, vai ocorrer um nullpointer;
+	```java
+	if (!lista.isEmpty()) 
+	```
 ### Arquivos fornecidos
 
 * /src/main/java/br/com/softplan/exe02/v1/GeradorObservacao.java

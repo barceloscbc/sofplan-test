@@ -8,16 +8,7 @@
 	<packaging>pom</packaging>
 	<name>Avaliação para Desenvolvedor de Software–Softplan UNIC</name>
 	<url>https://www.dropbox.com/sh/w0x94cqj1h5gctb/AABfwdDFhjnXrOqwiUeBQTjAa?dl=0&amp;preview=Avalia%C3%A7%C3%A3o+Desenvolvedor+UNIC.pdf</url>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>4.12</version>
-				<scope>test</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+	
 	<build>
 		<plugins>
 			<plugin>
