@@ -53,6 +53,8 @@ Este exercício tem como objetivo elencar alguns pontos que poderia melhor o có
 
 ### Arquivos após o refactoring
 
+### Cobertura dos testes
+![Cobertura de teste V1 e V2 ](/cobertura.png)
 ### Compilação e execução
 ```cmd
 mvn test
@@ -75,7 +77,9 @@ mvn test
 [INFO] Copying 0 resource
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ exercicio-02 ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 3 source files to D:\Projeto\fontes\sofplan-test\exercicio-02\target\test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ exercicio-02 ---
 [INFO] Surefire report directory: D:\Projeto\fontes\sofplan-test\exercicio-02\target\surefire-reports
@@ -84,17 +88,23 @@ mvn test
  T E S T S
 -------------------------------------------------------
 Running br.com.softplan.exe02.v1.GeradorObservacaoTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.334 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.367 sec
+Running br.com.softplan.exe02.v2.GeradorObservacaoTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 
 Results :
 
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 24.319 s
-[INFO] Finished at: 2018-07-03T22:22:29-03:00
-[INFO] Final Memory: 9M/184M
+[INFO] Total time: 22.830 s
+[INFO] Finished at: 2018-07-03T23:27:20-03:00
+[INFO] Final Memory: 14M/122M
 [INFO] ------------------------------------------------------------------------
+
 ```	
+
+
+
