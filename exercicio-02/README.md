@@ -42,3 +42,55 @@ Este exercício tem como objetivo elencar alguns pontos que poderia melhor o có
 	```java
 	List lista
 	```
+### Arquivos fornecidos
+
+* /src/main/java/br/com/softplan/exe02/v1/GeradorObservacao.java
+* /src/test/java/br/com/softplan/exe02/v1/GeradorObservacaoTest.java
+
+### Arquivos após o refactoring
+
+### Compilação e execução
+```cmd
+mvn test
+
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Exercio 2 0.0.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ exercicio-02 ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ exercicio-02 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ exercicio-02 ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ exercicio-02 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ exercicio-02 ---
+[INFO] Surefire report directory: D:\Projeto\fontes\sofplan-test\exercicio-02\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running br.com.softplan.exe02.v1.GeradorObservacaoTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.334 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 24.319 s
+[INFO] Finished at: 2018-07-03T22:22:29-03:00
+[INFO] Final Memory: 9M/184M
+[INFO] ------------------------------------------------------------------------
+```	
