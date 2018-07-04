@@ -53,6 +53,10 @@ Este exercício tem como objetivo elencar alguns pontos que poderia melhor o có
 
 ### Arquivos após o refactoring
 
+* /src/main/java/br/com/softplan/exe02/v2/GeradorObservacao.java
+* /src/main/java/br/com/softplan/exe02/v2/IGeradorObservacao.java
+* /src/test/java/br/com/softplan/exe02/v2/GeradorObservacaoTest.java
+
 ### Cobertura dos testes
 ![Cobertura de teste V1 e V2 ](./cobertura.png)
 ### Compilação e execução
