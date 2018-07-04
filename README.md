@@ -6,6 +6,14 @@ Avaliação  para  Desenvolvedor  de  Software–Softplan  UNIC
 
 ### Check-Out
 
+
 ### Build
 
+
+## Release notes
+
+### 0.1.0 - 03-07-2018
+#### Features
+* [#1](https://github.com/barceloscbc/sofplan-test/issues/1) Auditoria do código enviado
+* [#2](https://github.com/barceloscbc/sofplan-test/issues/2) Proposta de código
 
