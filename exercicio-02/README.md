@@ -54,7 +54,7 @@ Este exercício tem como objetivo elencar alguns pontos que poderia melhor o có
 ### Arquivos após o refactoring
 
 ### Cobertura dos testes
-![Cobertura de teste V1 e V2 ](/cobertura.png)
+![Cobertura de teste V1 e V2 ](./cobertura.png)
 ### Compilação e execução
 ```cmd
 mvn test
