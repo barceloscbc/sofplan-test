@@ -1,0 +1,73 @@
+<div class="card">
+    <div class="card-body">
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)" ngNativeValidate>
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="inputDistancia">Distância em KM</label>
+              <input type="text" class="form-control" id="inputDistancia" placeholder="Distância em KM" 
+                     required oninput="this.value = this.value.replace(/[^0-9]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" 
+                     [(ngModel)]="model.distancia" name="distancia" #distancia="ngModel"/>
+            </div>
+            <div class="form-group col-md-3 ">
+              <label for="inputVeiculo" >Veículo utilizado</label>
+              <select id="inputVeiculo" class="form-control" required
+                  [(ngModel)]="model.veiculo" name="veiculo" #veiculo="ngModel">
+                  <option *ngFor="let tipoVeiculo of listaVeiculos | async" [ngValue]="tipoVeiculo">{{tipoVeiculo.veiculo}}</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3 ">
+                <label for="inputVia" >Tipo de via</label>
+                <select id="inputVia" class="form-control" required
+                    [(ngModel)]="model.custo" name="custo" #custo="ngModel">
+                    <option *ngFor="let custo of listaCustoTransporte | async" [ngValue]="custo">{{custo.tipoVia}}</option>
+                  </select>
+              </div>
+            <div class="form-group col-md-2">
+                <label for="inputCarga">Carga transportada em TON</label>
+                <input type="text" class="form-control" id="inputCarga" placeholder="Carga transportada em TON" 
+                        required oninput="this.value = this.value.replace(/[^0-9]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" 
+                        [(ngModel)]="model.carga" name="carga" #carga="ngModel">
+             </div>
+             <div class="form-group col-md-2" style="text-align: right">
+                <label for="buttonAdd" style="color:#FFFFFF;">adicionar</label><br/>
+                <button type="submit" id="buttonAdd" class="btn btn-primary" title="Adicionar custo">
+                    <fa-icon [icon]="['fas', 'plus-circle']"></fa-icon>
+                </button>&nbsp;
+                <button id="buttonCle" class="btn btn-primary" (click)="onRemoveAll()" title="Limpar Grid">
+                  <fa-icon [icon]="['fas', 'trash-alt']"></fa-icon>
+                </button>
+             </div>
+          </div>
+          <div class="form-row">
+            <div class="col"><hr></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12" >
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <th scope="col">Distância</th>
+                      <th scope="col">Veículo</th>
+                      <th scope="col">Via</th>
+                      <th scope="col">Carga</th>
+                      <th scope="col">Custo</th>
+                    </thead>
+                    <tbody >
+                      <tr *ngFor="let cc of listaCalculoCusto | async">
+                        <td style="text-align: right">{{cc.distancia | number: '1.2-2':'pt-BR'}} km</td>
+                        <td>{{cc.veiculo.veiculo}}</td>
+                        <td>{{cc.custo.tipoVia}}</td>
+                        <td style="text-align: right"> {{cc.carga | number: '1.2-2':'pt-BR'}} ton </td>
+                        <td style="text-align: right"> R$ {{cc.total | number: '1.2-2':'pt-BR'}} </td> 
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+          </div>
+      </form>
+    </div>
+    <div class="card-footer text-muted " style="text-align: right;">
+      <span >Valor total do transporte:<b> R$ {{ valorTotal | number : '1.2-2' : 'pt-BR'}}</b></span>
+    </div>
+</div>

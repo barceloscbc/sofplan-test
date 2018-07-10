@@ -1,0 +1,15 @@
+<div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <th scope="col">Veículo</th>
+        <th scope="col">Fator multiplicador do custo</th>
+      </thead>
+      <tbody >
+        <tr *ngFor="let tipoVeiculo of listaTipoVeiculo | async">
+          <td>{{tipoVeiculo.veiculo}}</td>
+          <td class="float-right">{{tipoVeiculo.fator | number: '1.2-2' : 'pt-BR'}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,15 @@
+<div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <th scope="col">Tipo de via</th>
+        <th scope="col">Custo do Km rodado</th>
+      </thead>
+      <tbody >
+        <tr *ngFor="let custoTransporte of listaCustoTransporte | async">
+          <td>{{custoTransporte.tipoVia}}</td>
+          <td class="float-right">R$ {{custoTransporte.custoKMRodado | number: '1.2-2':'pt-BR'}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
