@@ -28,13 +28,14 @@ Avaliação  para  Desenvolvedor  de  Software–Softplan  UNIC
 	cd ../../lacus-app
 	npm run start
 	```
-* Acesso browser
+* Acesso browser<br/>
 	[http://localhost:4200/](http://localhost:4200/)
 
 ## Release notes
 
-### 0.1.0 - 03-07-2018
+### 0.2.0 - 10-07-2018
 #### Features
 * [#1](https://github.com/barceloscbc/sofplan-test/issues/1) Auditoria do código enviado
 * [#2](https://github.com/barceloscbc/sofplan-test/issues/2) Proposta de código
+* [#4](https://github.com/barceloscbc/sofplan-test/issues/4) Calcular o custo de transporte - Front-End
 
