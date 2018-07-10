@@ -1,0 +1,36 @@
+
+<nav class="navbar navbar-dark grad">
+  <a class="navbar-brand" href="javascript:void(0);">
+    <img src="../assets/lacus.png" width="70" height="50" alt='{{ title }}' title='{{ title }}'>
+    {{ title }}
+  </a>
+</nav>
+<br/>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+        <h4><fa-icon [icon]="['fas', 'calculator']"></fa-icon>&nbsp;Calcula o custo do transporte</h4>
+        <cc-calculadora></cc-calculadora>
+    </div>
+  </div>         
+  <br/>
+  <div class="row">
+    <div class="col">
+      <fieldset>
+        <legend>Dados de cadastro</legend>
+        <form>
+            <div class="row">
+              <div class="col">
+                <h4><fa-icon [icon]="['fas', 'money-check-alt']"></fa-icon>&nbsp;Custo do transporte</h4>
+                <ct-lista></ct-lista>
+              </div>
+              <div class="col">
+                <h4><fa-icon [icon]="['fas', 'truck-moving']"></fa-icon>&nbsp;Tipos  de  veículos</h4>
+                <tv-lista></tv-lista>
+              </div>
+            </div>
+        </form>
+      </fieldset>
+    </div>
+  </div>  
+</div>
